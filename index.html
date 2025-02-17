@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Wellness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Wellness Dashboard</h1>
+        <button id="theme-toggle">Dark Mode</button>
+    </header>
+    <main>
+        <section id="charts">
+            <canvas id="wellnessChart"></canvas>
+        </section>
+        <section id="feedback">
+            <h2>Submit Feedback</h2>
+            <form id="feedback-form">
+                <textarea placeholder="How are you feeling today?" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="thank-you-message" class="hidden">Thank you for your feedback!</p>
+        </section>
+        <section id="wellness-tips">
+            <h2>Wellness Tips</h2>
+            <p id="tip">Loading tip...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Employee Wellness</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
